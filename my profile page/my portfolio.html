@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MY PORTFOLIO</title><!--group members
+MAKOBI SIMON PETER AND KALIBBALA LIVINGSTONE-->
+<!--REG NUMBERS;2022/A/KCS/0912/G/F AND 2022/A/KCS/0916/G/F RESPECTIVELY-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+
+		
+		*{
+margin: 0;
+padding: 0;
+
+		}
+		.header{
+      min-height: 100vh;
+      width: 100%;
+      background-image: url(images/img.jpg);
+      background-size: cover;
+      background-position: center;
+      min-height: 500px;
+      position: relative;
+      font-family: 'ubuntu', sans-serif;
+
+		}
+
+
+		.nav{
+   display: flex;
+   padding: 2% 6%;
+   justify-content: space-between;
+   align-items: center;
+		}
+		.nav-links{
+      flex: 1;
+      text-align: right;
+      right: 0;
+
+      
+
+		}
+		.nav-links ul li{
+			list-style: none;
+			display: inline-block;
+			padding: 8px 12px;
+			position: relative;
+		}
+		.nav-links ul li a{
+       color: green;
+       text-decoration: none;
+       font-size: 13px;
+       display: inline-block;
+
+		}
+	.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+	}	
+	.nav-links ul li:hover::after{
+		width: 100%;
+	}
+	span{
+color: red;
+}
+.text-box{
+	width: 90%;
+	color: blue;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+.text-box h1{
+	font-size: 62px;
+}
+.text-box h3{
+   font-size: 30px;
+}	
+
+.text-box p{
+	margin: 10px o 40px;
+	font-size: 14px;
+	color: black;
+}
+.hero-btn{
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 12px 34px;
+	font-size: 13px;
+	background: transparent;
+	position: relative;
+	cursor: pointer;
+}
+.hero-btn:hover{
+	border: 1px solid #f44336;
+	background: #f44336;
+	transition: 1s;
+}
+
+}
+nav .fa{
+	display: none;
+}
+@media(max-width: 700px){
+	.text-box h1{
+	font-size: 20px;
+}
+
+.nav-links ul li{
+	display: block;
+}
+	.nav-links{
+	position: absolute;
+	background: #f44336;
+	height: 100vh;
+	width: 200px;
+	top: 0;
+	right: 0px;   /*this makes the side menu hidden and we have to use javascript so that we click on the menu icon to open it when right value is 0 it is visible.*/
+	text-align: left;
+	z-index: 2;
+	transition: 1s;
+}
+nav .fa{
+	display: block;
+	color: #fff;
+	margin: 10px;
+	font-size: 22px;
+	cursor: pointer;
+}
+
+.nav-links ul{
+	padding: 30px;
+}
+
+}
+
+/*--about styling--*/
+.about{
+width: 100
+padding: 100px 0px;
+background-color: gray;
+font-family: 'poppins', sans-serif;
+display: flex;
+top: 0;
+}
+
+.about img{
+height: 400px;
+width: 400px;
+object-fit: cover;
+}
+.about-text{
+width: 550px;
+
+}
+.main{
+width: 1130px;
+max-width: 95%;
+margin: 0 auto;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.about-text h2{
+color: white;
+font-size: 60px;
+text-transform: capitalize;
+margin-bottom: 20px;
+text-align: left;
+font-weight: 500;
+padding-bottom: 20px;
+position: relative;
+}
+.about-text h5{
+color: white;
+letter-spacing: 2px;
+font-size: 22px;
+margin-bottom: 25px;
+text-transform: capitalize;
+}
+button{
+background-color: #f900fd;
+color: white;
+text-decoration: none;
+border: 2px solid transparent;
+font-weight: bold;
+padding: 13px 30px;
+border-radius: 30px;
+transition: .4s;
+}
+button:hover{
+background-color: transparent;
+border: 2px solid #f900fd;
+cursor: pointer;
+
+}
+span{
+color: red;
+}
+
+@media(max-width: 700px){
+.main{
+	flex-direction: column;
+}
+
+
+}
+
+/*passion styling starts*/
+
+.passion-section{
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+	background: gray;
+}
+	
+.passion-title{
+   font-size: 60px;
+	font-weight: 600;
+	color: darkred;
+
+}
+
+.card p{
+	color: black;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 22px;
+	padding: 10px;
+}
+.teaching{
+display: inline-flex;
+justify-content: space-between;
+margin-top: 5%;
+}
+.card{
+	flex-basis: 31%;
+	background: gold;
+	border-radius: 10px;
+   margin-bottom: 5%;
+   padding: 20px 12px;
+   box-sizing: border-box;
+   transition: 0.5s;
+}
+.card h5{
+	text-align: center;
+	font-weight: 600;
+	margin: 10px 0;
+	color: darkred;
+	font-size: 22px;
+}
+.card:hover{
+	box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+/*media query to make the content responsive*/
+@media(max-width: 700px){
+	.teaching{
+		flex-direction: column;
+	}
+}
+
+/*styling for hobbies section starts here*/
+.hobbies{
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+	background: gray;
+}
+.hobbies-title{
+ font-size: 36px;
+	font-weight: 600;
+	color: darkred;
+
+}
+.hob p{
+	color: black;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 22px;
+	padding: 10px;
+}
+.hobby{
+display: flex;
+justify-content: space-between;
+margin-top: 5%;
+}
+.hob{
+flex-basis: 31%;
+	background: greenyellow;
+	border-radius: 10px;
+   margin-bottom: 5%;
+   padding: 20px 12px;
+   box-sizing: border-box;
+   transition: 0.5s;
+}
+
+.hob h5{
+text-align: center;
+	font-weight: 600;
+	margin: 10px 0;
+	color: darkred;
+	font-size: 22px: ;
+}
+
+.hob:hover{
+	box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+/*media query to make the hoobies section responsive*/
+@media(max-width: 700px){
+  .hobby{
+  	flex-direction: column;
+  }
+
+}
+
+.fpra{
+	background-image: url(images/arsenal.jpg);
+	background-size: cover;
+	height: 45vh;
+	width: 420px;
+
+}
+.mpra{
+	background-image: url(images/omega.jpg);
+	background-size: cover;
+	height: 45vh;
+	width: 420px;
+}
+.wpra{
+	background-image: url(images/bloodline.jpg);
+	background-size: cover;
+	height: 45vh;
+	width: 400px;
+
+}
+
+.contact-section{
+    position: relative;
+top: 0;
+transition: 1s;
+padding: 100px 100px;
+height: 100vh;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-gap: 50px;
+background: gray;
+
+}
+.contact-form input, .contact-form textarea{
+width: 50%;
+height: 40px;
+background: lightblue;
+border: 1px solid #fff;
+margin-bottom: 30px;
+border-radius: 5px;
+text-transform: capitalize;
+color: #fff;
+padding: 5px 10px;
+display: flex;
+justify-content: space-between;
+
+}
+
+::placeholder{
+	color: #fff;
+}
+#msg{
+	height: 280px;
+	resize: none;
+	font-family:sans-serif; 
+}
+.form-submit-btn{
+	background: #ff4f4f;
+	color: #fff;
+	text-transform: capitalize;
+	padding: 15px 48px;
+	display: block;
+	margin: auto;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.map{
+  width: 80%;
+  height: 70px;
+  padding: 10px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  display: block;
+  justify-content: right;
+  background: gray;
+
+}
+@media(max-width: 700px){
+	.contact-form{
+		
+	}
+  
+
+
+	}
+}
+
+
+
+/*footer styling*/
+.fter{
+width: 30%;
+text-align: center;
+padding: 20px 0;
+background-color: gray;
+}
+.footer h4{
+margin-bottom: 25px;
+margin-top: 20px;
+font-weight: 600;
+
+}
+
+.icons  .fa{
+color: #f44336;
+margin: 0 13px;
+cursor: pointer;
+padding: 18px 0;
+
+}
+.fa fa-heart-o{
+	color: #f44336;
+}
+
+	</style>
+</head>
+<body>
+	<section class="header">
+		<nav>
+		<div class="nav-links" id="navLinks">
+			<i class="fa fa-times" onclick="hideMenu()"></i>
+			<ul>
+				<li><a href="file:///C:/Users/SOLOMY%20K/Desktop/my%20profile%20page/myp.html">Home</a></li>
+				<li><a href="file:///C:/Users/SOLOMY%20K/Desktop/my%20profile%20page/about%20me.html">About me</a></li>
+                <li><a href="file:///C:/Users/SOLOMY%20K/Desktop/my%20profile%20page/my%20passion.html">Passion</a></li>
+                <li><a href="file:///C:/Users/SOLOMY%20K/Desktop/my%20profile%20page/hobbies.html">My Hobbies</a></li>
+                <li><a href="file:///C:/Users/SOLOMY%20K/Desktop/my%20profile%20page/contact.html">Contact Us</a></li>
+			</ul>
+			
+        
+			</div>	
+
+       <i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+	</section>
+	<section class="home-section">
+		<div class="text-box">
+		<h4>Hello, my name is </h4>
+<h1>MAKOBI <span>SIMON PETER</span></h1>
+<p> Thank you for visiting my page. enjoy as you navigate through.</p>	
+<a href="#" class="hero-btn">Text me</a>
+		</div>
+
+	</section>
+<!--about me section-->
+<section class="about">
+
+<div class="main">
+<img src="images/simon.jpg" width="70%" height="70%">
+<div class="about-text">
+	<h2>About me</h2>
+	<h5>STUDENT OF <span>COMPUTER SCIENCE</span></h5>
+	<p> I am currently undertaking a barchelor's Degree in Computer science at Kabale University. i have so far learnt some magnificent skills in designing and developing websites I can give you you a hand </p>
+<button type="button">learn More</button>
+</div>
+</div>
+</section>
+<section class="passion-section">
+<div class="passion">
+<div class="passion-title">
+	<h2>My Passion</h2>
+</div>
+<div class="teaching">
+	<div class="card">
+	<h5>Teaching</h5>
+	<div class="pra">
+	<p>I am teacher not by proffesion but it is just a passion. It gives me pleasure to add something to other people in so doing.</p>
+<p style="text-align: center;">
+<a class="button" href="#">Read more</a>
+</p>
+</div>
+	</div>
+<div class="card">
+	<h5>Reading</h5>
+	<div class="pra">
+	<p>Reading is part of what i enjoy doing in my free times. from reading novels, to magazines, newspapers, books and anything worth reading that crosses my sight.</p>
+<p style="text-align: center;">
+<a class="button" href="#">Read more</a>
+</p>
+	</div>
+</div>
+<div class="card">
+	<h5>Soccer</h5>
+	<div class="pra">
+	<p>Soccer is almost part of me, not only do i enjoy watching it but also playing it. am mor comfortable playing as a center forward.</p>
+<p style="text-align: center;">
+<a class="button" href="#">Read more</a>
+</p>
+	</div>
+</div>
+</div>
+</div>
+	</div>
+</div>
+</section>
+
+<!--hobbies section starts here-->
+<section class="hobbies-section">
+	<div class="hobbies">
+<div class="hobbies-title">
+	<h2>My Hobbies</h2>
+</div>
+<div class="hobby">
+	<div class="hob">
+	<h5>Football</h5>
+	<div class="fpra">
+	<p>I am a great fan of football and am always craving to just have more of each time. In Uganda I support Vipers SC, and outside Uganda it has to be Arsenal. In the ongoing world Cup I'd like back the likes of Brasil and England due to their good squads though am a fan of Germany.So clearly I like watching football in my free time.</p>
+</div>
+	</div>
+<div class="hob">
+	<h5>Music</h5>
+	<div class="mpra">
+	<p>Music is also something else that has totally captured my attention. Whenever i find myself alone and isolated I do not give it a second thought to listen to some music. I like all kinds of good music though I give more attention to country music.</p>
+</div>
+</div>
+<div class="hob">
+	<h5>WWE</h5>
+	<div class="wpra">
+	<p>I started watching WWE since I was young and I totally can't do away with it. I just love the story lines the drama and the action at large. I like Randy Orton because of his signature move RKO. Recently I like how the Bloodline do their thing too.</p>
+	</div>
+</div>
+</div>
+</div>
+	</div>
+</div>
+
+</section>
+
+<section class="contact-section">
+	<h2>Contact Us</h2>
+
+
+	<form class="contact-form">
+    <input type="text" name="name" id="name" autocomplete="off" placeholder="name">	<br>
+    <input type="email" name="email" id="email" autocomplete="off" placeholder="email">	<br>	
+    <textarea name="msg" id="msg" placeholder="message" autocomplete="off"></textarea><br>
+    <button type="submit" class="form-submit-btn" onclick="validate()">Contact Us</button>
+
+
+	</form>
+    
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.834691121489!2d29.98822910000001!3d-1.2722887999999941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dc0d9192cc2333%3A0x9673581ac2e63b63!2sKabale%20University!5e0!3m2!1sen!2sug!4v1669130292245!5m2!1sen!2sug" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	
+
+</section>
+
+<section class="footer">
+	<div class="fter">
+<h4>Thanks for Visiting us</h4>
+<p>Feel free to come back</p>	
+</div>
+<div class="icons">
+	
+	<i class="fa fa-facebook"></i>
+	<i class="fa fa-twitter"></i>
+	<i class="fa fa-instagram"></i>
+</div>
+<p>made by<i class="fa fa-heart o"></i>SIMON  AND LIVINGSTONE</p>
+
+</section>
+
+
+
+
+	<!--javascipt for our toogle menu-->
+	<script type="text/javascript">
+		var navLinks = document.getElementById('navLinks');
+		function showMenu(){
+			navLinks.style.right = "0";
+		}
+      function hideMenu(){
+      	navLinks.style.right = "-200";
+      }
+
+
+
+function validate(){
+	var name = document.getElementById("name");
+	var email = document,getElementById("email");
+if (name.value =="" ||email.value =="") {
+	alert("No fields should be left blank");
+}
+alert("No fields should be left blank");
+
+
+}
+else{
+
+}
+
+}
+
+
+
+	</script>
+
+
+</body>
+</html>
